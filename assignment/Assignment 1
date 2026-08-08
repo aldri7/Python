@@ -1,1 +1,31 @@
+class Robot:
 
+    def __init__(self, name, type, battery, speed):
+        self.name = name
+        self.type = type
+        self.battery = battery
+        self.speed = speed
+
+    def display(self):
+        print(f"Robot name: {self.name}")
+        print(f"Robot Type: {self.type}")
+        print(f"Battery: {self.battery}")
+        print(f"Speed: {self.speed}")
+
+    def move(self):
+        print(f"{self.name} is moving.")
+
+    def stop(self):
+        print(f"{self.name} stops.")
+
+
+robot1 = Robot("optimus", "transformer", 90, 119)
+robot2 = Robot("ironhide", "weapon specialist", 95, 200)
+
+robot1.display()
+robot1.move()
+robot1.stop()
+
+robot2.display()
+robot2.move()
+robot2.stop()
